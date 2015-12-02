@@ -12,6 +12,8 @@
 		E3E0BB781C040BB300331467 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E0BB761C040BB300331467 /* rootViewController.m */; };
 		E3E0BB791C040BB300331467 /* rootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0BB771C040BB300331467 /* rootViewController.xib */; };
 		E3E0BB811C041A7A00331467 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0BB801C041A7A00331467 /* ViewController.xib */; };
+		E3E4C2E61C0EE838003A6A76 /* KCAnnontation.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2E51C0EE838003A6A76 /* KCAnnontation.m */; };
+		E3E4C2E91C0EF9CE003A6A76 /* KCCalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2E81C0EF9CE003A6A76 /* KCCalloutAnnotation.m */; };
 		E3E68EE01C0D347D00E1850B /* mapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E68EDE1C0D347D00E1850B /* mapViewViewController.m */; };
 		E3E68EE11C0D347D00E1850B /* mapViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E68EDF1C0D347D00E1850B /* mapViewViewController.xib */; };
 		E3E68EE31C0D41C000E1850B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E68EE21C0D41C000E1850B /* CoreLocation.framework */; };
@@ -48,6 +50,10 @@
 		E3E0BB761C040BB300331467 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
 		E3E0BB771C040BB300331467 /* rootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rootViewController.xib; sourceTree = "<group>"; };
 		E3E0BB801C041A7A00331467 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E3E4C2E41C0EE838003A6A76 /* KCAnnontation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnontation.h; sourceTree = "<group>"; };
+		E3E4C2E51C0EE838003A6A76 /* KCAnnontation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnontation.m; sourceTree = "<group>"; };
+		E3E4C2E71C0EF9CE003A6A76 /* KCCalloutAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCalloutAnnotation.h; sourceTree = "<group>"; };
+		E3E4C2E81C0EF9CE003A6A76 /* KCCalloutAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCalloutAnnotation.m; sourceTree = "<group>"; };
 		E3E68EDD1C0D347D00E1850B /* mapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewViewController.h; sourceTree = "<group>"; };
 		E3E68EDE1C0D347D00E1850B /* mapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewViewController.m; sourceTree = "<group>"; };
 		E3E68EDF1C0D347D00E1850B /* mapViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mapViewViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +163,10 @@
 				E3E68EDF1C0D347D00E1850B /* mapViewViewController.xib */,
 				E3E68EED1C0D4D6C00E1850B /* MyPoint.h */,
 				E3E68EEE1C0D4D6C00E1850B /* MyPoint.m */,
+				E3E4C2E41C0EE838003A6A76 /* KCAnnontation.h */,
+				E3E4C2E51C0EE838003A6A76 /* KCAnnontation.m */,
+				E3E4C2E71C0EF9CE003A6A76 /* KCCalloutAnnotation.h */,
+				E3E4C2E81C0EF9CE003A6A76 /* KCCalloutAnnotation.m */,
 				E3E68EF51C0D7E8D00E1850B /* gynnasiunDetailViewController.h */,
 				E3E68EF61C0D7E8D00E1850B /* gynnasiunDetailViewController.m */,
 				E3E68EF71C0D7E8D00E1850B /* gynnasiunDetailViewController.xib */,
@@ -269,9 +279,11 @@
 				E3E767A71C02A8F600B78797 /* ViewController.m in Sources */,
 				E3E767B91C02B25600B78797 /* gynnasiumTableViewCell.m in Sources */,
 				E3E767A41C02A8F600B78797 /* AppDelegate.m in Sources */,
+				E3E4C2E61C0EE838003A6A76 /* KCAnnontation.m in Sources */,
 				E3E767C81C02F16700B78797 /* secondViewController.m in Sources */,
 				E3E68EF81C0D7E8D00E1850B /* gynnasiunDetailViewController.m in Sources */,
 				E3E68EE01C0D347D00E1850B /* mapViewViewController.m in Sources */,
+				E3E4C2E91C0EF9CE003A6A76 /* KCCalloutAnnotation.m in Sources */,
 				E3E767A11C02A8F600B78797 /* main.m in Sources */,
 				E38232DE1C080FEF008DF239 /* detailTableViewViewController.m in Sources */,
 			);

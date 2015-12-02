@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import "KCAnnontation.h"
 @interface mapViewViewController : UIViewController<MKMapViewDelegate,UITextFieldDelegate,UIAlertViewDelegate>
 
 //经度
@@ -23,7 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 
 
-
+-(void)addAnnotation1;
 
 
 @end

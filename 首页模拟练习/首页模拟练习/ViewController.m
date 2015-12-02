@@ -14,6 +14,7 @@
 #import "GynnaziumViewController.h"
 #import "mapViewViewController.h"
 #import "gynnasiunDetailViewController.h"
+#import "LoginViewController.h"
 @interface ViewController ()<ButClickDelegate,ButClickDelegate,UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIView *tabBarButtonOfTitleView;
 
@@ -55,7 +56,8 @@
 }
 
 -(void)login{
-    
+    LoginViewController *lVC = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:lVC animated:YES];
 }
 //-(void)one{
 //    
