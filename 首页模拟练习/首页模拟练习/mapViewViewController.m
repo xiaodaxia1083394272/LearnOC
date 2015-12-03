@@ -164,17 +164,19 @@
         if (!annotationView) {
             annotationView=[[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:key1];
             //            annotationView.canShowCallout=true;//允许交互点击
-            annotationView.calloutOffset=CGPointMake(0, 1);//定义详情视图偏移量
-            annotationView.leftCalloutAccessoryView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1"]];//定义详情左侧视图
+            //annotationView.calloutOffset=CGPointMake(0, 1);//定义详情视图偏移量
+            //annotationView.leftCalloutAccessoryView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1"]];//定义详情左侧视图
         }
         
         //修改大头针视图
         //重新设置此类大头针视图的大头针模型(因为有可能是从缓存池中取出来的，位置是放到缓存池时的位置)
         annotationView.annotation=annotation;
-        annotationView.image=((KCAnnontation *)annotation).image;//设置大头针视图的图片
+        annotationView.image= @"1";                 ((KCAnnontation *)annotation).image;//设置大头针视图的图片
         
         return annotationView;
-    }return annotationView;
+    }else{
+        return nil;
+    }
 }
 
 
