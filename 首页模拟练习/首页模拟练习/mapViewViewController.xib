@@ -70,7 +70,7 @@
                     </connections>
                 </button>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HYP-gL-p1U">
-                    <rect key="frame" x="0.0" y="164" width="600" height="436"/>
+                    <rect key="frame" x="0.0" y="155" width="606" height="445"/>
                 </mapView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -80,7 +80,7 @@
             <connections>
                 <action selector="touchDownBackground:" destination="-1" eventType="touchDown" id="OvR-G2-Vqp"/>
             </connections>
-            <point key="canvasLocation" x="526" y="242"/>
+            <point key="canvasLocation" x="507" y="178"/>
         </view>
     </objects>
 </document>

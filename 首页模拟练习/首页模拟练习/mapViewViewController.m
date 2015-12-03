@@ -45,14 +45,18 @@
     
     
     //手机定位设置
-    self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestWhenInUseAuthorization];
+    _locationManager=[[CLLocationManager alloc]init];
+    if(![CLLocationManager locationServicesEnabled]||[CLLocationManager authorizationStatus]!=kCLAuthorizationStatusAuthorizedWhenInUse){
+        [_locationManager requestWhenInUseAuthorization];
+    }
     
+    //用户位置追踪(用户位置追踪用于标记用户当前位置，此时会调用定位服务)
+    _mapView.userTrackingMode=MKUserTrackingModeFollow;
 //
     
     //设置MapView的委托为自己Ó
-    [self.mapView setDelegate:self];
-    
+    //[self.mapView setDelegate:self];
+    _mapView.delegate =self;
     //标注自身位置
     [self.mapView setShowsUserLocation:YES];
     
@@ -67,10 +71,7 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
 //    CLLocationCoordinate2D loc = [userLocation coordinate];
@@ -133,12 +134,12 @@
     CLLocation *loc = [[CLLocation alloc]initWithLatitude:[[self.latitudeText text] floatValue] longitude:[[self.longitudeText text] floatValue]];
    CLLocationCoordinate2D coord = [loc coordinate];
     
-    KCAnnontation *annotation1=[[KCAnnontation alloc]init];
-    annotation1.title=@"CMJ Studio";
-    annotation1.subtitle=@"Kenshin Cui's Studios";
-    annotation1.coordinate=coord;
-    annotation1.image=[UIImage imageNamed:@"1"];
-    [_mapView addAnnotation:annotation1];
+//    KCAnnontation *annotation1=[[KCAnnontation alloc]init];
+//    annotation1.title=@"CMJ Studio";
+//    annotation1.subtitle=@"Kenshin Cui's Studios";
+//    annotation1.coordinate=coord;
+//    annotation1.image=[UIImage imageNamed:@"1"];
+//    [_mapView addAnnotation:annotation1];
     
    // CLLocationCoordinate2D location2=CLLocationCoordinate2DMake(39.87, 116.35);
   
@@ -146,6 +147,7 @@
     annotation2.title=@"Kenshin&Kaoru";
     annotation2.subtitle=@"Kenshin Cui's Home";
     annotation2.coordinate=coord;
+   
     annotation2.image=[UIImage imageNamed:@"2"];
     [_mapView addAnnotation:annotation2];
 }//
@@ -171,8 +173,10 @@
         //修改大头针视图
         //重新设置此类大头针视图的大头针模型(因为有可能是从缓存池中取出来的，位置是放到缓存池时的位置)
         annotationView.annotation=annotation;
-        annotationView.image= @"1";                 ((KCAnnontation *)annotation).image;//设置大头针视图的图片
+     
+        annotationView.image=  ((KCAnnontation *)annotation).image;//设置大头针视图的图片
         
+        annotationView.frame = CGRectMake(0, 0, 50, 50);
         return annotationView;
     }else{
         return nil;
