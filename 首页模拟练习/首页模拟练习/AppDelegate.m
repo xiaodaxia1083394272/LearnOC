@@ -9,12 +9,23 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "rootViewController.h"
-@interface AppDelegate ()
+#import "首页模拟练习NavigationController.h"
+@interface AppDelegate ()<pushDelegate>
 
 @end
 
 @implementation AppDelegate
-
+-(void)pushViewController{
+    
+//    if (self.viewControllers.count > 0) {
+//                viewController.hidesBottomBarWhenPushed = YES;
+//        
+//            }
+//        //    //[self.navigationController pushViewController:ucenter animated:YES];
+//            [super pushViewController:viewController animated:animated];
+    
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
@@ -36,14 +47,13 @@
     NSArray *controllers = [NSArray arrayWithObjects:navViewController,navRootviewController,nil];
     tabBarController.viewControllers = controllers;
     
-    [self.window makeKeyAndVisible];
+    //[self.window makeKeyAndVisible];
+
+   // viewController.hidesBottomBarWhenPushed = YES;
+    //[self.navigationController pushViewController:ucenter animated:YES];
     
     
-    
-    
-    
-    
-    
+
     
     return YES;
 }

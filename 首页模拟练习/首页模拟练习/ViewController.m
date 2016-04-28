@@ -15,7 +15,8 @@
 #import "mapViewViewController.h"
 #import "gynnasiunDetailViewController.h"
 #import "LoginViewController.h"
-@interface ViewController ()<ButClickDelegate,ButClickDelegate,UIScrollViewDelegate>
+#import "首页模拟练习NavigationController.h"
+@interface ViewController ()<ButClickDelegate,ButClickDelegate,UIScrollViewDelegate,pushDelegate>
 @property (strong, nonatomic) IBOutlet UIView *tabBarButtonOfTitleView;
 
 @property (strong, nonatomic) UIScrollView *myScrollView;

@@ -12,6 +12,8 @@
 		E3E0BB781C040BB300331467 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E0BB761C040BB300331467 /* rootViewController.m */; };
 		E3E0BB791C040BB300331467 /* rootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0BB771C040BB300331467 /* rootViewController.xib */; };
 		E3E0BB811C041A7A00331467 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0BB801C041A7A00331467 /* ViewController.xib */; };
+		E3E0DDAB1C17E24500D4E760 /* 首页模拟练习NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E0DDA91C17E24500D4E760 /* 首页模拟练习NavigationController.m */; };
+		E3E0DDAC1C17E24500D4E760 /* 首页模拟练习NavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E0DDAA1C17E24500D4E760 /* 首页模拟练习NavigationController.xib */; };
 		E3E4C2E61C0EE838003A6A76 /* KCAnnontation.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2E51C0EE838003A6A76 /* KCAnnontation.m */; };
 		E3E4C2E91C0EF9CE003A6A76 /* KCCalloutAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2E81C0EF9CE003A6A76 /* KCCalloutAnnotation.m */; };
 		E3E68EE01C0D347D00E1850B /* mapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E68EDE1C0D347D00E1850B /* mapViewViewController.m */; };
@@ -50,6 +52,9 @@
 		E3E0BB761C040BB300331467 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
 		E3E0BB771C040BB300331467 /* rootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = rootViewController.xib; sourceTree = "<group>"; };
 		E3E0BB801C041A7A00331467 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E3E0DDA81C17E24500D4E760 /* 首页模拟练习NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "首页模拟练习NavigationController.h"; sourceTree = "<group>"; };
+		E3E0DDA91C17E24500D4E760 /* 首页模拟练习NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "首页模拟练习NavigationController.m"; sourceTree = "<group>"; };
+		E3E0DDAA1C17E24500D4E760 /* 首页模拟练习NavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "首页模拟练习NavigationController.xib"; sourceTree = "<group>"; };
 		E3E4C2E41C0EE838003A6A76 /* KCAnnontation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAnnontation.h; sourceTree = "<group>"; };
 		E3E4C2E51C0EE838003A6A76 /* KCAnnontation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAnnontation.m; sourceTree = "<group>"; };
 		E3E4C2E71C0EF9CE003A6A76 /* KCCalloutAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCalloutAnnotation.h; sourceTree = "<group>"; };
@@ -136,6 +141,9 @@
 				E3E767A51C02A8F600B78797 /* ViewController.h */,
 				E3E767A61C02A8F600B78797 /* ViewController.m */,
 				E3E0BB801C041A7A00331467 /* ViewController.xib */,
+				E3E0DDA81C17E24500D4E760 /* 首页模拟练习NavigationController.h */,
+				E3E0DDA91C17E24500D4E760 /* 首页模拟练习NavigationController.m */,
+				E3E0DDAA1C17E24500D4E760 /* 首页模拟练习NavigationController.xib */,
 				E3E767A81C02A8F600B78797 /* Main.storyboard */,
 				E3E767B61C02B25600B78797 /* gynnasiumTableViewCell.h */,
 				E3E767B71C02B25600B78797 /* gynnasiumTableViewCell.m */,
@@ -248,6 +256,7 @@
 			files = (
 				E3E767AF1C02A8F600B78797 /* LaunchScreen.storyboard in Resources */,
 				E3E0BB811C041A7A00331467 /* ViewController.xib in Resources */,
+				E3E0DDAC1C17E24500D4E760 /* 首页模拟练习NavigationController.xib in Resources */,
 				E3E68EF91C0D7E8D00E1850B /* gynnasiunDetailViewController.xib in Resources */,
 				E3E767BA1C02B25600B78797 /* gynnasiumTableViewCell.xib in Resources */,
 				E3E0BB791C040BB300331467 /* rootViewController.xib in Resources */,
@@ -274,6 +283,7 @@
 				E3E6C7211C07F84700A6CDC8 /* GynnaziumViewController.m in Sources */,
 				E3E767D01C0307F600B78797 /* thirdViewController.m in Sources */,
 				E3E767C31C02BD8F00B78797 /* twoTableViewCell.m in Sources */,
+				E3E0DDAB1C17E24500D4E760 /* 首页模拟练习NavigationController.m in Sources */,
 				E3E68EFD1C0DA5DB00E1850B /* LoginViewController.m in Sources */,
 				E3E0BB781C040BB300331467 /* rootViewController.m in Sources */,
 				E3E767A71C02A8F600B78797 /* ViewController.m in Sources */,
