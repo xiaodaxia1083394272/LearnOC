@@ -8,12 +8,21 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TestHeaderView">
-            <rect key="frame" x="0.0" y="0.0" width="328" height="241"/>
+            <rect key="frame" x="0.0" y="0.0" width="368" height="552"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQ7-ve-rr9">
+                    <rect key="frame" x="0.0" y="132" width="368" height="204"/>
+                    <color key="backgroundColor" red="0.0" green="0.97647064920000004" blue="0.28627452250000002" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="0.5" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="192" y="224.5"/>
+            <connections>
+                <outlet property="contentHolderView" destination="nQ7-ve-rr9" id="tGf-By-1kw"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="369"/>
         </view>
     </objects>
 </document>

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TestHeaderView : UIView
+@property (weak, nonatomic) IBOutlet UIView *contentHolderView;
++ (TestHeaderView *)createTestHeaderView;
+- (void)show;
 
 @end

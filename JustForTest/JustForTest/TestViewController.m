@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "TestHeaderView.h"
 
 @interface TestViewController ()
 @property (weak, nonatomic) IBOutlet UIView *firstHolderView;
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *testConstraint;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondConstraintHeight;
+@property (assign, nonatomic) CGFloat constraintHeight;
 
 
 @end
@@ -54,7 +56,9 @@
 */
 - (IBAction)a:(id)sender {
     self.secondHolderView.hidden = YES;
-    self.testConstraint.constant = -129;//
+    self.testConstraint.constant = -MAX(129,_constraintHeight);//凡是处理过约束的都会保留有残留，可能要进行相应的挑选
+    TestHeaderView *testHeaderView = [TestHeaderView createTestHeaderView];
+    [testHeaderView show];
 }
 - (IBAction)b:(id)sender {
     self.secondHolderView.hidden = NO;
@@ -66,7 +70,7 @@
 
 - (void)noName{
 //    NSArray *valueList = [group objectForKey:name];
-    CGFloat constraintHeight = 0;
+    _constraintHeight = 0;
     NSArray *valueList = [[NSArray alloc] init];
     valueList = [NSArray arrayWithObjects:@"nihao",@"nihaoma",@"haoma",@"comeOnba", nil];
     for (NSString *oneValue in valueList) {
@@ -78,7 +82,7 @@
         
         
 //        self.secondHolderView.translatesAutoresizingMaskIntoConstraints = NO;
-        valueLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        valueLabel.translatesAutoresizingMaskIntoConstraints = NO; //不用上一句原因，或许是因为原父view已经自动布局了，就不用除去resizing，而刚创建的label可能默认有resizing，所以要除去
         
         [self.secondHolderView addSubview:valueLabel];
         
@@ -119,7 +123,7 @@
                                   toItem:self.secondHolderView
                                   attribute:NSLayoutAttributeTop
                                   multiplier:1
-                                  constant:constraintHeight];
+                                  constant:_constraintHeight];
         
 //        NSLog(@"l1:%@, l2：%@， l3:%@, l4:%@", l1, l2, l3, l4);
         
@@ -133,12 +137,12 @@
 
 
         
-        constraintHeight +=60;
+        _constraintHeight +=60;
         
 //        break;
     }
     
-    self.secondConstraintHeight.constant = constraintHeight;
+    self.secondConstraintHeight.constant = _constraintHeight;
 
 }
 
