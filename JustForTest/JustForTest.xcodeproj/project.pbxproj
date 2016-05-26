@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3E2A29A1CF5ACAD003DC2AE /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E2A2981CF5ACAD003DC2AE /* TestViewController.m */; };
+		E3E2A29B1CF5ACAD003DC2AE /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E2A2991CF5ACAD003DC2AE /* TestViewController.xib */; };
+		E3E465CF1CF69ACE00FC40EF /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E465CD1CF69ACE00FC40EF /* TestTableViewController.m */; };
+		E3E465D01CF69ACE00FC40EF /* TestTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E465CE1CF69ACE00FC40EF /* TestTableViewController.xib */; };
+		E3E465D31CF69B2D00FC40EF /* TestHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E465D21CF69B2D00FC40EF /* TestHeaderView.m */; };
+		E3E465D51CF69B4F00FC40EF /* TestHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E465D41CF69B4F00FC40EF /* TestHeaderView.xib */; };
 		E3E4C2F71CD063DA00190DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2F61CD063DA00190DB0 /* main.m */; };
 		E3E4C2FA1CD063DA00190DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2F91CD063DA00190DB0 /* AppDelegate.m */; };
 		E3E4C2FD1CD063DA00190DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E4C2FC1CD063DA00190DB0 /* ViewController.m */; };
@@ -16,6 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3E2A2971CF5ACAD003DC2AE /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		E3E2A2981CF5ACAD003DC2AE /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		E3E2A2991CF5ACAD003DC2AE /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		E3E465CC1CF69ACE00FC40EF /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		E3E465CD1CF69ACE00FC40EF /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		E3E465CE1CF69ACE00FC40EF /* TestTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewController.xib; sourceTree = "<group>"; };
+		E3E465D11CF69B2D00FC40EF /* TestHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHeaderView.h; sourceTree = "<group>"; };
+		E3E465D21CF69B2D00FC40EF /* TestHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHeaderView.m; sourceTree = "<group>"; };
+		E3E465D41CF69B4F00FC40EF /* TestHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestHeaderView.xib; sourceTree = "<group>"; };
 		E3E4C2F21CD063DA00190DB0 /* JustForTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustForTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E4C2F61CD063DA00190DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3E4C2F81CD063DA00190DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +78,15 @@
 				E3E4C2FB1CD063DA00190DB0 /* ViewController.h */,
 				E3E4C2FC1CD063DA00190DB0 /* ViewController.m */,
 				E3E4C2FE1CD063DA00190DB0 /* Main.storyboard */,
+				E3E2A2971CF5ACAD003DC2AE /* TestViewController.h */,
+				E3E2A2981CF5ACAD003DC2AE /* TestViewController.m */,
+				E3E2A2991CF5ACAD003DC2AE /* TestViewController.xib */,
+				E3E465CC1CF69ACE00FC40EF /* TestTableViewController.h */,
+				E3E465CD1CF69ACE00FC40EF /* TestTableViewController.m */,
+				E3E465CE1CF69ACE00FC40EF /* TestTableViewController.xib */,
+				E3E465D11CF69B2D00FC40EF /* TestHeaderView.h */,
+				E3E465D21CF69B2D00FC40EF /* TestHeaderView.m */,
+				E3E465D41CF69B4F00FC40EF /* TestHeaderView.xib */,
 				E3E4C3011CD063DA00190DB0 /* Assets.xcassets */,
 				E3E4C3031CD063DA00190DB0 /* LaunchScreen.storyboard */,
 				E3E4C3061CD063DB00190DB0 /* Info.plist */,
@@ -138,8 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E4C3051CD063DB00190DB0 /* LaunchScreen.storyboard in Resources */,
+				E3E465D01CF69ACE00FC40EF /* TestTableViewController.xib in Resources */,
 				E3E4C3021CD063DA00190DB0 /* Assets.xcassets in Resources */,
+				E3E2A29B1CF5ACAD003DC2AE /* TestViewController.xib in Resources */,
 				E3E4C3001CD063DA00190DB0 /* Main.storyboard in Resources */,
+				E3E465D51CF69B4F00FC40EF /* TestHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +179,9 @@
 			files = (
 				E3E4C2FD1CD063DA00190DB0 /* ViewController.m in Sources */,
 				E3E4C2FA1CD063DA00190DB0 /* AppDelegate.m in Sources */,
+				E3E465CF1CF69ACE00FC40EF /* TestTableViewController.m in Sources */,
+				E3E465D31CF69B2D00FC40EF /* TestHeaderView.m in Sources */,
+				E3E2A29A1CF5ACAD003DC2AE /* TestViewController.m in Sources */,
 				E3E4C2F71CD063DA00190DB0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +329,7 @@
 				E3E4C30B1CD063DB00190DB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

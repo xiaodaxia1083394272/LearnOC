@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -26,5 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)a:(id)sender {
+    TestViewController *testViewController = [[TestViewController alloc] init];
+    [self.navigationController pushViewController:testViewController animated:YES];
+}
 
 @end
